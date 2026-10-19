@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bdv2kt8eqv76h"]
+
+[ext_resource type="Script" uid="uid://chn3poyq3tuha" path="res://ship_1.gd" id="1_8biib"]
+[ext_resource type="Texture2D" uid="uid://tnoegy44elqq" path="res://sprites/ship1/ship1_frame1_v002_canvas.png" id="2_8biib"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ogq8d"]
+size = Vector2(24, 13)
+
+[node name="ship1" type="Area2D" unique_id=1694008558 groups=["player"]]
+position = Vector2(0, -1)
+script = ExtResource("1_8biib")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1960610465]
+position = Vector2(0, 1.5)
+shape = SubResource("RectangleShape2D_ogq8d")
+
+[node name="ship1_spr" type="Sprite2D" parent="." unique_id=623979052]
+z_index = 5
+texture = ExtResource("2_8biib")
+hframes = 3
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

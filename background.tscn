@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://nyv0o01nlcbi"]
+
+[ext_resource type="Script" uid="uid://bbuo6y3gmixdp" path="res://background.gd" id="1_oabld"]
+
+[node name="background" type="Node2D" unique_id=838733744]
+script = ExtResource("1_oabld")
+
+[node name="ground" type="ColorRect" parent="." unique_id=983782723]
+offset_top = 159.0
+offset_right = 480.0
+offset_bottom = 320.0
+color = Color(0.62439054, 0.27689558, 0.15731579, 1)
+
+[node name="sky" type="ColorRect" parent="." unique_id=236972016]
+z_index = 10
+offset_right = 480.0
+offset_bottom = 159.0
+color = Color(0.2, 1, 1, 1)

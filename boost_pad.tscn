@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://8b5314m74aw7"]
+
+[ext_resource type="Script" uid="uid://do3nj6pvsmasl" path="res://boost_pad.gd" id="1_71cp0"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ogq8d"]
+size = Vector2(20, 12)
+
+[node name="boost_pad" type="Area2D" unique_id=273423327]
+script = ExtResource("1_71cp0")
+metadata/_edit_group_ = true
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=587893384]
+offset_right = 20.0
+offset_bottom = 12.0
+color = Color(1, 1, 0.28235295, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=29178359]
+position = Vector2(10, 6)
+shape = SubResource("RectangleShape2D_ogq8d")

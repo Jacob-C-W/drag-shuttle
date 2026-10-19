@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dbq3uykgbmh41"]
+
+[ext_resource type="PackedScene" uid="uid://nyv0o01nlcbi" path="res://background.tscn" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://cssuhfrhmfy47" path="res://main.gd" id="1_h2yge"]
+[ext_resource type="PackedScene" uid="uid://bdv2kt8eqv76h" path="res://ship_1.tscn" id="2_h2yge"]
+[ext_resource type="PackedScene" uid="uid://kamefvq7t14d" path="res://debris.tscn" id="4_lquwl"]
+[ext_resource type="PackedScene" uid="uid://8b5314m74aw7" path="res://boost_pad.tscn" id="5_7mycd"]
+
+[node name="main" type="Node2D" unique_id=488938613]
+script = ExtResource("1_h2yge")
+
+[node name="background" parent="." unique_id=838733744 instance=ExtResource("1_0xm2m")]
+
+[node name="ship1" parent="." unique_id=280369409 instance=ExtResource("2_h2yge")]
+position = Vector2(228, 288)
+scale = Vector2(2, 2)
+
+[node name="debris" parent="." unique_id=42736157 instance=ExtResource("4_lquwl")]
+
+[node name="boost_pad" parent="." unique_id=574749495 instance=ExtResource("5_7mycd")]
